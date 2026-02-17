@@ -1,7 +1,7 @@
-# inputrc for libreadline
-# read when GNU Readline (the input library Bash uses) is started.
-# Because it's not directly part of Bash, reset and source ~/.bashrc et al won't work.
-# To reload this without starting a new session, you need to run bind -f ~/.inputrc.
+# inputrc for libreadline (read when GNU Readline is loaded)
+# Will affect all programs using readline (e.g. bash, python, mysql)
+# To reload, run `bind -f ~/.inputrc` (or start a new session)
+
 
 # show all possible completions
 set page-completions off
