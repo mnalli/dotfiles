@@ -19,7 +19,7 @@ shopt -s histappend
 PROMPT_COMMAND='history -a'
 
 HISTSIZE=-1
-# HISTFILE=~/.bash_history
+HISTFILE=~/.local/share/bash/bash_history
 
 # multiline-capable history format
 HISTTIMEFORMAT='%F %T '
