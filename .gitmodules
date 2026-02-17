@@ -1,0 +1,6 @@
+[submodule ".config/fish/nemo/bass"]
+	path = .config/fish/nemo/bass
+	url = https://github.com/edc/bass.git
+[submodule ".config/fish/nemo/z"]
+	path = .config/fish/nemo/z
+	url = https://github.com/jethrokuan/z.git
