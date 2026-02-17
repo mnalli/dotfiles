@@ -207,7 +207,7 @@ export COMPOSE_PARALLEL_LIMIT=4         # max parallel engine calls
 
 ################################################################################
 
-NVM_DIR=~/bash/nvm
+NVM_DIR=~/.config/bash/nvm
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
 
@@ -281,7 +281,7 @@ h() {
 }
 
 
-source ~/bash/insert_newline.bash/insert_newline.bash
+. ~/.config/bash/insert_newline.bash/insert_newline.bash
 
 
 MSM_PREVIEW='batcat --decorations=never --color=always --paging=never -l bash'
@@ -289,9 +289,9 @@ MSM_STORE=(~/snippets.sh ~/paths.path)
 
 MSM_FZF_PREVIEW_WINDOW='down:3'
 
-. ~/bash/msm/msm.bash
+. ~/.config/bash/msm/msm.bash
 
 bind -x '"\ec": msm_capture'
 bind -x '"\er": msm_recall'
 
-source ~/bash/fzf_complete.bash/fzf_complete.bash
+. ~/.config/bash/fzf_complete.bash/fzf_complete.bash
