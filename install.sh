@@ -1,0 +1,11 @@
+#!/bin/sh
+
+DOTFILES_DIR=~/.dotfiles
+
+# TODO: use -f?
+
+# link all home dotfiles
+ln -s $(find "$DOTFILES_DIR" -maxdepth 1 -type f -name '.*') ~/
+
+# link .config sub-directories
+ln -s "$DOTFILES_DIR"/.config/* ~/.config/
