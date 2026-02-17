@@ -12,3 +12,4 @@ ln -s "$DOTFILES_DIR"/.config/* ~/.config/
 
 # link .local sub-directories
 ln -s "$DOTFILES_DIR"/.local/src/* ~/.local/src/
+ln -s "$DOTFILES_DIR"/.local/share/* ~/.local/share/

@@ -285,7 +285,7 @@ h() {
 
 
 MSM_PREVIEW='batcat --decorations=never --color=always --paging=never -l bash'
-MSM_STORE=(~/snippets.sh ~/paths.path)
+MSM_STORE=(~/.local/share/bash/*)
 
 MSM_FZF_PREVIEW_WINDOW='down:3'
 
