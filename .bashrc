@@ -10,7 +10,7 @@ esac
 stty -ixon
 
 HISTCONTROL=ignoreboth:erasedups
-HISTIGNORE="&:bg:fg:id:ls:ll:pwd:which*"
+HISTIGNORE="&:bg:fg:id:ls:ll:pwd"
 
 # append to the history file, don't overwrite it
 shopt -s histappend
