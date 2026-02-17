@@ -1,0 +1,38 @@
+[user]
+	name = Michele Nalli
+	email = m.nalli@ikmail.com
+[core]
+	editor = code --wait --reuse-window
+	excludesfile = /home/michele/.config/git/ignore
+[sequence]
+	editor = git-cola-sequence-editor
+[cola]
+	startupmode = list
+	logdate = human
+	fontdiff = Noto Sans Mono CJK HK,12,-1,0,50,0,0,0,0,0
+	icontheme = dark
+	blameviewer = git gui blame
+	spellcheck = true
+	tabwidth = 4
+	textwidth = 80
+	statusindent = true
+	boldheaders = false
+	statusshowtotals = true
+	refreshonfocus = true
+	notifyonpush = true
+	resizebrowsercolumns = false
+	autoloadcommittemplate = true
+[commit]
+	cleanup = whitespace
+	template = /home/michele/.config/git/message.txt
+[gui]
+	historybrowser = git-dag
+[pull]
+	rebase = false
+[diff]
+	tool = meld
+[merge]
+	tool = meld
+	verbosity = 2
+[help]
+	autocorrect = 25
