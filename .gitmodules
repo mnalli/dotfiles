@@ -16,3 +16,6 @@
 [submodule ".config/bash/nvm"]
 	path = .config/bash/nvm
 	url = https://github.com/nvm-sh/nvm
+[submodule ".local/src/git-cola"]
+	path = .local/src/git-cola
+	url = https://github.com/git-cola/git-cola
