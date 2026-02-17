@@ -1,0 +1,72 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "active_pane_modifiers": {
+    "magnification": 1.2,
+    "border_size": 4.5,
+    "inactive_opacity": 0.8
+  },
+  "auto_install_extensions": {
+    "html": true,
+    "dockerfile": true,
+    "docker-compose": true
+    // set to false to never install
+  },
+
+  "cursor_shape": "block",
+
+  // lsp
+
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+
+  "terminal": {
+    "copy_on_select": true,
+    "env": {
+      "ZED": "1"
+    },
+    "line_height": "standard"
+  },
+
+  "theme": {
+    "mode": "system",
+    "light": "Atelier Seaside Light",
+    "dark": "Ayu Dark"
+  },
+
+  "calls": {
+    "mute_on_join": true
+  },
+
+  "unnecessary_code_fade": 0.6,
+
+  "vim_mode": false,
+  "vim": {
+    "toggle_relative_line_numbers": true
+  },
+
+  // fonts
+
+  "wrap_guides": [80],
+
+  "format_on_save": "off",
+
+  "file_types": {
+    "Helm": [
+      "**/templates/**/*.tpl",
+      "**/templates/**/*.yaml",
+      "**/templates/**/*.yml",
+      "**/helmfile.d/**/*.yaml",
+      "**/helmfile.d/**/*.yml"
+    ]
+  },
+
+  "show_whitespaces": "all"
+
+}
