@@ -1,0 +1,80 @@
+# inputrc for libreadline
+# read when GNU Readline (the input library Bash uses) is started.
+# Because it's not directly part of Bash, reset and source ~/.bashrc et al won't work.
+# To reload this without starting a new session, you need to run bind -f ~/.inputrc.
+
+# show all possible completions
+set page-completions off
+
+set menu-complete-display-prefix on
+
+set visible-stats on
+
+set colored-completion-prefix on
+set colored-stats on
+
+# abbreviations support
+"\C- ": alias-expand-line
+
+"\C-xk": kill-whole-line
+# C-k: Kill the text from the current cursor position to the end of the line.
+
+
+"\e[18~": menu-complete            # F7
+"\e[19~": menu-complete-backward   # F8
+# old-menu-complete (not bound)
+
+# concatenate commands: https://stackoverflow.com/questions/22224657/custom-readline-functions-in-bash-commandline
+
+################################## HISTORY #####################################
+
+# Arrow keys - prefix search (use C-p, C-n for default behavior)
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+# (redundant)
+# "\eOB": next-history
+# "\eOA": previous-history
+
+# Pag keys - substring search: same of incremental search but less interactive
+"\e[5~": history-substring-search-backward
+"\e[6~": history-substring-search-forward
+
+# "\C-s": forward-search-history
+# "\C-r": reverse-search-history
+#
+# "\e<": beginning-of-history
+# "\e>": end-of-history
+
+# Non-incremental (like the incremental but more limited)
+# `non-incremental-forward-search-history` (`A-n`)
+# `non-incremental-reverse-search-history` (`A-p`)
+# `non-incremental-forward-search-history-again` (not bound)
+# `non-incremental-reverse-search-history-again` (not bound)
+
+# fetch-history (not bound)
+
+# additionally wrap the binding in an if to protect other shells that use readline such as PostgreSQL and SQLite
+$if Bash
+    # automatic history expansion
+    # https://blog.sanctum.geek.nz/bash-history-expansion/#comment-4106
+    Space: magic-space
+$endif
+
+############################## DEFAULT BINDINGS ################################
+
+# "\e\C-l": clear-display
+# "\C-l": clear-screen
+
+# "\C-q": quoted-insert
+# "\C-v": quoted-insert --> cannot unbind
+
+# redraw-current-line (not bound)
+# "\C-x\C-r": re-read-init-file
+# "\e\C-r": revert-line
+# "\er": revert-line
+
+
+
+# TODO: tenere qui solo le readline functions
+# non    bind -x '"\e\r": insert_newline'
