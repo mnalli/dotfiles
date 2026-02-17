@@ -39,7 +39,7 @@ shopt -s autocd
 # multi-line commands are saved to the history with newlines rather than semicolon
 shopt -s cmdhist lithist
 
-# HISTTIMEFORMAT='%F %T '
+HISTTIMEFORMAT='%F %T '
 
 
 if [ -f ~/.bash_aliases ]; then
