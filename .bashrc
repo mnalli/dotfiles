@@ -15,6 +15,9 @@ HISTIGNORE="&:bg:fg:id:ls:ll:pwd"
 # append to the history file, don't overwrite it
 shopt -s histappend
 
+# append history after every command
+PROMPT_COMMAND='history -a'
+
 HISTSIZE=-1
 # HISTFILE=~/.bash_history
 
