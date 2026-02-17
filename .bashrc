@@ -38,11 +38,6 @@ set -o noclobber
 
 shopt -s autocd
 
-
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
-
 # source config
 for file in ~/.config/bash/conf.d/*; do
     . $file

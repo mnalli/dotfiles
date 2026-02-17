@@ -1,5 +1,3 @@
-# ~/.bash_aliases: sourced in ~/.bashrc
-
 # Note on completions: rather than defining all completions for aliases, expand
 # the alias and perform the completion
 
