@@ -21,6 +21,12 @@ PROMPT_COMMAND='history -a'
 HISTSIZE=-1
 # HISTFILE=~/.bash_history
 
+# multiline-capable history format
+HISTTIMEFORMAT='%F %T '
+
+# save all lines of a multiple-line command in the same history entry
+shopt -s cmdhist lithist
+
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
@@ -34,12 +40,6 @@ set -o noclobber
 
 # cd without cd
 shopt -s autocd
-
-# save all lines of a multiple-line command in the same history entry
-# multi-line commands are saved to the history with newlines rather than semicolon
-shopt -s cmdhist lithist
-
-HISTTIMEFORMAT='%F %T '
 
 
 if [ -f ~/.bash_aliases ]; then
