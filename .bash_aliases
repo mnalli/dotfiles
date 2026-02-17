@@ -75,20 +75,6 @@ alias j="jobs"
 # 	   echo "Not cleaned.";
 # 	fi'
 
-# Csh compatibility:
-alias unsetenv=unset
-function setenv () {
-    export $1="$2"
-}
-
-# Function which adds an alias to the current shell and to the ~/.bash_aliases file.
-add-alias () {
-   local name=$1 value="$2"
-   echo alias "$name='$value'" >>~/.bash_aliases
-   eval alias "$name='$value'"
-   alias $name
-}
-
 # # "repeat" command.  Like:
 # #
 # #	repeat 10 echo foo
