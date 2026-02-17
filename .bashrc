@@ -9,7 +9,7 @@ esac
 # disable the XON/XOFF feature (enable forward i-search)
 stty -ixon
 
-HISTCONTROL=ignoreboth:erasedups
+HISTCONTROL=ignorespace:erasedups
 HISTIGNORE="&:bg:fg:id:ls:ll:pwd"
 
 # append to the history file, don't overwrite it
