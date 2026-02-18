@@ -90,8 +90,7 @@ done
 bind -x '"\C-xw": "which ${READLINE_LINE%% *}"'
 
 ktitle () {
-    echo -ne "\033]30;$@\007"
-    # xtitle: echo -n -e "\033]0;$*\007"
+    echo -ne "\033]30;$*\007"
 }
 
 laws () {
