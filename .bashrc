@@ -43,6 +43,8 @@ for file in ~/.config/bash/conf.d/*; do
     . $file
 done
 
+# direnv
+eval "$(direnv hook bash)"
 
 ################################################################################
 
