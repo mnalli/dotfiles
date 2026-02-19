@@ -245,7 +245,7 @@ h() {
 
 
 MSM_PREVIEW='batcat --decorations=never --color=always --paging=never -l bash'
-MSM_STORE=(~/.local/share/bash/*)
+MSM_STORE=(~/.local/share/bash/msm/*)
 
 MSM_FZF_PREVIEW_WINDOW='down:3'
 
