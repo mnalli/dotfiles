@@ -61,8 +61,6 @@ alias j="jobs -l"
 # alias ss="ps -aux"
 # alias news="xterm -g 80x45 -e trn -e -S1 -N &"
 
-alias j="jobs"
-
 
 # Some useful aliases.
 # alias texclean='rm -f *.toc *.aux *.log *.cp *.fn *.tp *.vr *.pg *.ky'
@@ -125,4 +123,3 @@ if [ -n "$(which grc)" ]; then
     done
 
 fi
-
