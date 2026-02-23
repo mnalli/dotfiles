@@ -1,6 +1,11 @@
 # Note on completions: rather than defining all completions for aliases, expand
 # the alias and perform the completion
 
+# navigation
+alias -- '--'='cd -'
+alias -- '+'=pushd
+alias -- '-'=popd
+
 alias ls='ls --color=always -CF'
 alias la='ls -A'
 alias lh='ls -d .[a-zA-Z0-9_]*'
@@ -52,9 +57,6 @@ alias x='xsel -ib'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 alias j="jobs -l"
-
-alias pu="pushd"
-alias po="popd"
 
 # alias ss="ps -aux"
 # alias news="xterm -g 80x45 -e trn -e -S1 -N &"
