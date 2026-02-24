@@ -5,16 +5,16 @@
 	path = .config/fish/nemo/z
 	url = https://github.com/jethrokuan/z.git
 [submodule ".config/bash/fzf_complete.bash"]
-	path = .config/bash/fzf_complete.bash
+	path = .config/bash/plugins/fzf_complete.bash
 	url = https://github.com/mnalli/fzf_complete.bash
 [submodule ".config/bash/insert_newline.bash"]
-	path = .config/bash/insert_newline.bash
+	path = .config/bash/plugins/insert_newline.bash/
 	url = https://github.com/mnalli/insert_newline.bash
 [submodule ".config/bash/msm"]
-	path = .config/bash/msm
+	path = .config/bash/plugins/msm
 	url = https://github.com/mnalli/msm
 [submodule ".config/bash/nvm"]
-	path = .config/bash/nvm
+	path = .config/bash/plugins/nvm
 	url = https://github.com/nvm-sh/nvm
 [submodule ".local/src/git-cola"]
 	path = .local/src/git-cola

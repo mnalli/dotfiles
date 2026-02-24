@@ -235,7 +235,7 @@ h() {
 }
 
 
-. ~/.config/bash/insert_newline.bash/insert_newline.bash
+. ~/.config/bash/plugins/insert_newline.bash/insert_newline.bash
 
 
 MSM_PREVIEW='batcat --decorations=never --color=always --paging=never -l bash'
@@ -243,9 +243,9 @@ MSM_STORE=(~/.local/share/bash/msm/*)
 
 MSM_FZF_PREVIEW_WINDOW='down:3'
 
-. ~/.config/bash/msm/msm.bash
+. ~/.config/bash/plugins/msm/msm.bash
 
 bind -x '"\ec": msm_capture'
 bind -x '"\er": msm_recall'
 
-. ~/.config/bash/fzf_complete.bash/fzf_complete.bash
+. ~/.config/bash/plugins/fzf_complete.bash/fzf_complete.bash
