@@ -165,12 +165,6 @@ export EDITOR='zed --wait'
 export COMPOSE_REMOVE_ORPHANS=true
 export COMPOSE_PARALLEL_LIMIT=4         # max parallel engine calls
 
-################################################################################
-
-NVM_DIR=~/.config/bash/nvm
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
-
 #################################### fzf #######################################
 
 # inspired by: github.com/craftzdog/dotfiles-public
