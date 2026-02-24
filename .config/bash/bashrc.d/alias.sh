@@ -20,6 +20,10 @@ alias grep='grep -i'
 
 alias fd=fdfind
 
+# top → btop
+# du → ncdu
+
+
 # bat dwim (auto pager). Line numbers are handled by the pager.
 # This is because, if we want to copy some lines, we can disable line numbers.
 alias b='batcat --decorations=never'

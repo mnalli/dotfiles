@@ -39,7 +39,7 @@ set -o noclobber
 shopt -s autocd
 
 # source config
-for file in ~/.config/bash/conf.d/*; do
+for file in ~/.config/bash/bashrc.d/*; do
     . $file
 done
 
